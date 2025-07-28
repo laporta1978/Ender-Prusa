@@ -1,0 +1,37 @@
+Información de PRUSA BEAR
+
+SENDING:M503
+echo:  G21    ; Units in mm (mm)
+echo:  M149 C ; Units in Celsius
+echo:; Filament settings: Disabled
+echo:  M200 S0 D1.75
+echo:; Steps per unit:
+echo: M92 X80.00 Y80.00 Z400.00 E454.50
+echo:; Maximum feedrates (units/s):
+echo:  M203 X300.00 Y300.00 Z5.00 E45.00
+echo:; Maximum Acceleration (units/s2):
+echo:  M201 X3000.00 Y3000.00 Z100.00 E10000.00
+echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+echo:  M204 P3000.00 R3000.00 T3000.00
+echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+echo:  M205 B20000.00 S0.00 T0.00 X8.00 Y8.00 Z0.30 E5.00
+echo:; Home offset:
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:; Auto Bed Leveling:
+echo:  M420 S0 Z0.00
+echo:; Servo Angles:
+echo:  M281 P0 L120 U35
+echo:; Material heatup parameters:
+echo:  M145 S0 H205 B60 F0
+echo:  M145 S1 H240 B100 F0
+echo:; PID settings:
+echo:  M301 P26.94 I2.16 D83.85 F10.00
+echo:  M304 P164.37 I20.06 D897.66
+echo:; Power-Loss Recovery:
+echo:  M413 S0
+echo:; Z-Probe Offset (mm):
+echo:  M851 X-39.00 Y-36.00 Z-0.62
+echo:; Linear Advance:
+echo:  M900 K0.00
+echo:; Filament load/unload lengths:
+echo:  M603 L20.00 U2.00

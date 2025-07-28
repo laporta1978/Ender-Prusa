@@ -1,0 +1,39 @@
+SENDING:M503
+echo:; Linear Units:
+echo:  G21 ; (mm)
+echo:; Temperature Units:
+echo:  M149 C ; Units in Celsius
+echo:; Filament settings (Disabled):
+echo:  M200 S0 D1.75
+echo:; Steps per unit:
+echo:  M92 X79.86 Y79.90 Z401.20 E95.71
+echo:; Max feedrates (units/s):
+echo:  M203 X500.00 Y500.00 Z20.00 E25.00
+echo:; Max Acceleration (units/s2):
+echo:  M201 X2500.00 Y2500.00 Z500.00 E5000.00
+echo:; Acceleration (units/s2) (P<print-accel> R<retract-accel> T<travel-accel>):
+echo:  M204 P800.00 R500.00 T1000.00
+echo:; Advanced (B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_jerk> Y<max_jerk> Z<max_jerk> E<max_jerk>):
+echo:  M205 B20000.00 S0.00 T0.00 X10.00 Y10.00 Z0.40 E5.00
+echo:; Home offset:
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:; Auto Bed Leveling:
+echo:  M420 S0 Z10.00 ; Leveling OFF
+echo:; Material heatup parameters:
+echo:  M145 S0 H205.00 B60.00 F255
+echo:  M145 S1 H240.00 B70.00 F255
+echo:; Hotend PID:
+echo:  M301 P23.57 I2.46 D56.57
+echo:; Bed PID:
+echo:  M304 P224.57 I43.86 D766.53
+echo:; Power-loss recovery:
+echo:  M413 S1 ; ON
+echo:; Z-Probe Offset:
+echo:  M851 X-35.00 Y-5.00 Z-2.08 ; (mm)
+echo:; Input Shaping:
+echo:  M593 X F59.80 D0.15
+echo:  M593 Y F59.80 D0.15
+echo:; Filament load/unload:
+echo:  M603 L0.00 U100.00 ; (mm)
+echo:; Filament runout sensor:
+echo:  M412 S1 ; Sensor ON
